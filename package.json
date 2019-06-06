@@ -1,26 +1,21 @@
 {
-  "name": "push-notifications-lab-solution",
-  "version": "1.0.0",
-  "description": "Push notifications codelab.",
+  "name": "push-notification-lab",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint \".\"",
-    "test": "npm run lint"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
+    "web-push": "^3.3.3"
   },
   "devDependencies": {
-    "eslint": "^3.8.1",
-    "eslint-config-google": "^0.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GoogleChrome/push-notifications.git"
-  },
-  "license": "Apache 2",
-  "bugs": {
-    "url": "https://github.com/GoogleChrome/push-notifications/issues"
-  },
-  "homepage": "https://github.com/GoogleChrome/push-notifications#readme",
-  "keywords": [],
-  "dependencies": {
-    "express": "4.17.1"
+    "express": "^4.16.4",
+    "web-push": "^3.3.3"
   }
 }
