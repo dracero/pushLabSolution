@@ -143,13 +143,13 @@ function updateSubscriptionOnServer(subscription) {
   );
 
   if (subscription) {
+    const obj = {variable: subscription}; //subscription
+    axios.post("https://apibackpush.herokuapp.com/webpush/add/",obj).then(res => console.log(res.data));
     subscriptionJson.textContent = JSON.stringify(subscription);
     subscriptionDetails.classList.remove("is-invisible");
    } else {
     subscriptionDetails.classList.add("is-invisible");
-  }
-  const obj = {variable: subscription}; //subscription
-  axios.post("https://apibackpush.herokuapp.com/webpush/add/",obj).then(res => console.log(res.data));
+   }
 }
 
 
