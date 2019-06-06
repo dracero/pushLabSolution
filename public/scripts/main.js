@@ -148,16 +148,17 @@ function updateSubscriptionOnServer(subscription) {
    } else {
     subscriptionDetails.classList.add("is-invisible");
   }
-}
-const obj = {
+  const obj = {
       variable: subscription
     }; //subscription
-axios
+  axios
       .post(
         process.env.URL || "https://apibackpush.herokuapp.com/webpush/add/",
         obj
       )
       .then(res => console.log(res.data));
+}
+
 
 swRegistration.pushManager
   .subscribe({
