@@ -1,5 +1,5 @@
 {
-  "name": "push-notifications",
+  "name": "push-notifications-lab-solution",
   "version": "1.0.0",
   "description": "Push notifications codelab.",
   "scripts": {
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/GoogleChrome/push-notifications/issues"
   },
-  "homepage": "https://github.com/GoogleChrome/push-notifications#readme"
+  "homepage": "https://github.com/GoogleChrome/push-notifications#readme",
+  "keywords": [],
+  "dependencies": {
+    "express": "4.17.1"
+  }
 }
