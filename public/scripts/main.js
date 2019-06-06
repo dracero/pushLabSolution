@@ -25,7 +25,7 @@ const applicationServerPublicKey =
   "BKlmqtN1LwO916HUrZ5XHX0TE2uGYDVr_A1bM_GbbdgX4AKk_7ax2Fj_3te-6kvMuXxnnHJSlhP14CkJqSu4dRE";
 
 const pushButton = document.querySelector(".js-push-btn");
-const axios = require('axios')
+
 
 let isSubscribed = false;
 let swRegistration = null;
