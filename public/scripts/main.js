@@ -135,16 +135,16 @@ function subscribeUser() {
 }
 
 function updateSubscriptionOnServer(subscription) {
-  // TODO: Send subscription to application server
-
+  if (subscription !== null){
+    const obj = {variable: subscription}; //subscription
+    axios.post("https://apibackpush.herokuapp.com/webpush/add/",obj).then(res => console.log(res.data));
+  }
   const subscriptionJson = document.querySelector(".js-subscription-json");
   const subscriptionDetails = document.querySelector(
     ".js-subscription-details"
   );
 
   if (subscription) {
-    const obj = {variable: subscription}; //subscription
-    axios.post("https://apibackpush.herokuapp.com/webpush/add/",obj).then(res => console.log(res.data));
     subscriptionJson.textContent = JSON.stringify(subscription);
     subscriptionDetails.classList.remove("is-invisible");
    } else {
