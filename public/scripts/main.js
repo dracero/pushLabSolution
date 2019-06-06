@@ -18,7 +18,7 @@
  */
 
 /* eslint-env browser, es6 */
-import axios from "axios";
+var axios = require('axios');
 
 ("use strict");
 
